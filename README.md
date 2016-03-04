@@ -4,20 +4,20 @@ A simple way to use the Daybreak Games Census API service
 
 ## Table of Contents
 
--[Installing](#installation)
--[Creating a new query](#create-query)
--[Returning data from the query](#get-data)
--[Setting global parameters](#create-query)
--[Defining a condition](#define-condition)
--[Setting a language](#set-language)
--[Show certain fields](#show-fields)
--[Hide certain fields](#hide-fields)
--[Set a limit for number of rows to return](#set-limit)
--[Set the starting row](#set-start)
--[Add a resolve](#add-resolve)
--[Join to another service](#join-service)
--[Group results (tree)](#set-tree)
--[Getting the url of the entire query string](#get-url)
+- [Installing](#installing)
+- [Creating a new query](#creating-a-new-query)
+- [Returning data from the query](#returning-data-from-the-query)
+- [Setting global parameters](#setting-global-parameters)
+- [Defining a condition](#defining-a-condition)
+- [Setting a language](#setting-a-language)
+- [Show certain fields](#show-certain-fields)
+- [Hide certain fields](#hide-certain-fields)
+- [Set a limit for number of rows to return](#set-a-limit-for-number-of-rows-to-return)
+- [Set the starting row](#set-the-starting-row)
+- [Add a resolve](#add-a-resolve)
+- [Join to another service](#join-to-another-service)
+- [Tree results on a field](#tree-results-on-a-field)
+- [Getting the url of the query](#getting-the-url-of-the-query)
 
 ## Installing
 
@@ -157,7 +157,7 @@ Join objects have the following methods:
 * `where(string)`: See the 'Defining a condition' section above
 * `joinService(string)`: Returns another join object for sub joining
 
-## Group results (tree)
+## Tree results on a field
 
 ```js
 var query = new CensusQuery('vehicle', 'ps2');
@@ -171,7 +171,7 @@ Tree objects have the following methods:
 * `startField(string)`
 * `treeField(string)`: Returns another tree object for sub grouping
 
-## Getting the url of the entire query string
+## Getting the url of the query
 
 ```js
 var url = query.toUrl();
