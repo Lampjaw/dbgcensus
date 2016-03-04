@@ -1,0 +1,38 @@
+{
+  "author": "Lampjaw <lampjaw@gmail.com>",
+  "name": "dbgcensus",
+  "homepage": "https://github.com/lampjaw",
+  "description": "A simple way to use the Daybreak Games Census API service",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "Daybreak",
+    "DBG",
+    "DGC",
+    "census",
+    "Planetside",
+    "H1Z1",
+    "Everquest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lampjaw/dbgcensus.git"
+  },
+  "dependencies": {
+    "request": ">=2.0.0",
+    "clone": "1.0.x"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "chai": "0.3.x",
+    "grunt": "~0.4.5",
+    "grunt-simple-mocha": "^0.4.1",
+    "mocha": "^2.4.5"
+  },
+  "bugs": {
+    "url": "https://github.com/lampjaw/dbgcensus/issues"
+  }
+}
