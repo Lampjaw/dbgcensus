@@ -3,7 +3,7 @@
   "name": "dbgcensus",
   "homepage": "https://github.com/lampjaw",
   "description": "A simple way to use the Daybreak Games Census API service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "index.js",
   "keywords": [
