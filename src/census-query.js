@@ -190,23 +190,22 @@ function createQueryString(queryType, query) {
 }
 
 function httpQuery(service, url, callback) {
-	request.get(url, function(error, response, body) {
-		if (error) {
-            callback('[CensusConnectionError]' + error)
-            return;
+  request.get(url, function(error, response, body) {
+	      if (error) {
+            return callback('[CensusConnectionError]' + error)
         }
-
+        
+        var json;
         try {
-            var json = JSON.parse(body);
+            json = JSON.parse(body);
         } catch(ex) {
-            callback('[CensusQueryError]');
-            return;
+            return callback('[dbgcensusError] Failed to parse census response');
         }
 
         var root = service + '_list';
 
         if (!json[root]) {
-            callback('[CensusQueryError]');
+            callback('[CensusQueryError] ' + (json.error || json.errorMessage));
         } else {
             callback(null, json[root]);
         }
