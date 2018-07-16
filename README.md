@@ -1,4 +1,5 @@
 # dbgcensus
+[![npm version](https://badge.fury.io/js/dbgcensus.svg)](https://www.npmjs.com/package/dbgcensus)
 
 A simple way to use the Daybreak Games Census API service
 
